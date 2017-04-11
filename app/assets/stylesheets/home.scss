@@ -1,0 +1,54 @@
+
+.image-upload-container {
+  background-color: white;
+  margin: 50px;
+  padding: 50px;
+  height: 90%;
+  width: 90%;
+
+  .upload-area {
+    border: 3px grey dashed;
+    padding: 100px;
+    width: 78%;
+    height: 60%;
+    margin: 0 auto;
+    left: 45%;
+    top: 45%;
+    &:hover {
+      cursor: pointer;
+    }
+
+    .glyphicon-plus {
+      font-size: 48px;
+      color: grey;
+      cursor: pointer;
+      postion: absolute;
+      top: 0;
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  #preview {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  #edit {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    font-size: 24px;
+    color: white;
+    top: 200px;
+    left: 180px;
+  }
+}
+
+
