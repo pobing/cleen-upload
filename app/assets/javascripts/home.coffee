@@ -1,5 +1,7 @@
 setupStyle = ->
   $.getJSON '/layouts', (data) ->
+    return if data.error
+
     page = data.page
     slot = page.slots[0]
     $('.image-upload-container').css({'width': "#{page.width/1000}%", 'height': "#{page.height/1000}%"})

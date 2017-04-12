@@ -13,7 +13,7 @@ class LayoutsController < ApplicationController
       body = Net::HTTP.get URI(LAYOUTS_DATA_URL)
       JSON.parse body
     rescue Exception => e
-      {}
+      {error: e.message}
     end
   end
 end
