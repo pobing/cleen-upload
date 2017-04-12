@@ -26,11 +26,6 @@ $ ->
     $('#preview').show()
     $('#slot').hide()
 
-  $('#preview, #edit').on 'click', ->
+  $('#preview').on 'click', ->
     $('#fileInput').click()
-
-  $('#preview').hover (->
-    $('#edit').css({'opacity': 1, 'display': 'block'})
-  ), ->
-    $('#edit').css({'opacity': 0, 'display': 'none'})
 
